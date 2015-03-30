@@ -925,7 +925,7 @@ class Cite {
 					$this->refKey( $key, $count ),
 					$this->referencesKey( $key . $subkey ),
 					$this->getLinkLabel( $label, $group,
-						( ( $group == CITE_DEFAULT_GROUP ) ? '' : "$group " ) . $wgContLang->formatNum( $label ) )
+						( ( $group == CITE_DEFAULT_GROUP || !$wgCiteShowGroupNames  ) ? '' : "$group " ) . $wgContLang->formatNum( $label ) )
 				)->inContentLanguage()->plain()
 			);
 	}
