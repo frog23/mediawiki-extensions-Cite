@@ -52,6 +52,11 @@ $wgAllowCiteGroups = true;
 $wgCiteCacheReferences = false;
 
 /**
+ * Allows users to optionally hide reference group names
+ */
+$wgCiteShowGroupNames = true;  
+
+/**
  * Performs the hook registration.
  * Note that several extensions (and even core!) try to detect if Cite is
  * installed by looking for wfCite().
